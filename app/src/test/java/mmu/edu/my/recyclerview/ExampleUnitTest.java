@@ -1,4 +1,4 @@
-package mmu.edu.my.recycleview;
+package mmu.edu.my.recyclerview;
 
 import org.junit.Test;
 

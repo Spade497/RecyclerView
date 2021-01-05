@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mmu.edu.my.recycleview">
+    package="mmu.edu.my.recyclerview">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycleview">
-        <activity android:name=".DetailsActivity"></activity>
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="mmu.edu.my.recyclerview.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <activity android:name=".DetailsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

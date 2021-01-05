@@ -1,4 +1,4 @@
-package mmu.edu.my.recycleview;
+package mmu.edu.my.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
